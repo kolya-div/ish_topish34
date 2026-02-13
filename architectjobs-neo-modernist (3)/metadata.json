@@ -1,0 +1,8 @@
+{
+  "name": "ArchitectJobs Neo-Modernist",
+  "description": "Enterprise-grade ish portali Neo-Modernist dizayn tizimi bilan.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

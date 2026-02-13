@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchitectJobs | Neo-Modernist Enterprise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              neo: {
+                light: '#FDFDFD',
+                dark: '#050505',
+                surface: '#0F0F0F',
+                border: '#E2E8F0',
+                borderDark: '#1F1F1F',
+                text: '#111111',
+                textDark: '#F5F5F7',
+                amber: '#FFD60A',
+                orange: '#FF9F0A'
+              }
+            },
+            boxShadow: {
+              'neo': '0 10px 40px -10px rgba(0,0,0,0.05)',
+              'neo-dark': '0 20px 60px -15px rgba(0,0,0,0.7)',
+              'glow': '0 0 20px rgba(255, 159, 10, 0.4)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        :root {
+            --cyber-amber: linear-gradient(135deg, #FFD60A 0%, #FF9F0A 100%);
+        }
+        body {
+            transition: background-color 0.6s cubic-bezier(0.23, 1, 0.32, 1), color 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .glass-2 {
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+        }
+        .neo-gradient {
+            background: var(--cyber-amber);
+        }
+        .neo-button-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 159, 10, 0.5);
+        }
+        .cubic-transition {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        /* Hide scrollbar but keep functionality */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-neo-light dark:bg-neo-dark text-neo-text dark:text-neo-textDark selection:bg-neo-orange selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
